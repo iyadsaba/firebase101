@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Firebase Hosting</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/4.12.1/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/4.12.1/firebase-auth.js"></script>
+    <script defer src="/__/firebase/4.12.1/firebase-database.js"></script>
+    <script defer src="/__/firebase/4.12.1/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/4.12.1/firebase-storage.js"></script>
+    <script src='https://www.firebase.com/js/libs/idle.js'></script>
+
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+
+
+  </head>
+  <body>
+<h1>Firebase 101 </h1>
+
+<button onclick="googleLogin()" id="google" class="btn"> Login With Google</button>
+
+<div>
+  <form action="">
+    <input id="email" type="text" placeholder="email">
+    <input id="password" type="password" placeholder="password">
+<input onclick="emailLogin(event)" type="submit" value="Login">
+  </form>
+</div>
+
+
+<div>
+  <h1>Total  Online Users :  <span id="online"></span></h1>
+<button onclick="updateOnlineUsers()">Check Online</button>
+</div>
+    
+
+<button onclick="logoutUser()" class="btn">LogOut</button>
+<script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
+
+ <script src="app.js"></script>
+  </body>
+</html>

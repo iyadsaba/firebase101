@@ -1,0 +1,13 @@
+.btn{
+    padding: 20px;
+    color: aliceblue;
+    background-color: blueviolet;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 23px;
+    border-radius: 16px;
+}
+
+.btn:hover{
+    cursor: pointer;
+}
